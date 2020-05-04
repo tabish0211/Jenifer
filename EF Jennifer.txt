@@ -1,0 +1,30 @@
+
+
+EF--ORM--Object Relational Mapping
+
+Object---Model--Automatically Will be mapped with Table at database --benifit---queries ----Complexity is Manged by EF
+
+Install EF---Package Manager Console
+
+Tools>Nuget Package Manager>Package manger Console
+then small window will open at bottom
+
+type below command to install EF one time only in one solution
+Install-Package EntityFramework -Version 6.1.3
+
+second step DbContext class----It is an abstarction of database communication
+
+in webconfig:
+ <connectionStrings>
+    <add name="constr" connectionString="server=DESKTOP-U7L63BC\SQLEXPRESS;database=JenniferDb;Integrated Security=true;" 
+         providerName="System.Data.SqlClient"/>
+  </connectionStrings>
+
+
+cls is a command to clear the screen
+in the package manager write
+
+enable-migrations
+add-migration addEmployeeTableToDB
+update-database
+
